@@ -1,0 +1,13 @@
+game:GetService("ReplicatedStorage").Remotes.MorphEvent:FireServer("Reset")
+wait(2)
+Anim.AnimationId = "rbxassetid://282574440"
+local track = game.Players.LocalPlayer.Character.Humanoid:LoadAnimation(Anim)
+local FloorCrawlACTIVE = false
+    FloorCrawlACTIVE = not FloorCrawlACTIVE
+    if FloorCrawlACTIVE then
+        track:Play(.1, 1, 1)
+        FloorCrawl.BackgroundColor3 = loc
+    else
+        track:Stop()
+        FloorCrawl.BackgroundColor3 = col
+    end
