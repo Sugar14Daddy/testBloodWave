@@ -1,4 +1,6 @@
 prefix = game.Players.LocalPlayer.PlayerGui.HDAdminGUIs.MainFrame.Pages.Settings.Custom["AE1 Prefix"].SettingValue.TextBox.Text 
+    while _G.AntiIce == true do
+    wait(0.4)
 local checkPath = game.Workspace:GetDescendants()
 local Player = game.Players.LocalPlayer.Character
 local username = game:GetService("Players").LocalPlayer.Name
