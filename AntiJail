@@ -1,0 +1,17 @@
+local checkPath = game.Workspace:GetDescendants()
+local Player = game.Players.LocalPlayer.Character
+local username = game:GetService("Players").LocalPlayer.Name
+
+
+for i = 1,#checkPath do local v = checkPath[i]
+    if _G.AntiJail == true then
+    if v.Name == username.."'s JailCell" then
+        wait(0.4)
+        game:GetService("ReplicatedStorage").HDAdminClient.Signals.RequestCommand:InvokeServer(prefix.."unjc me".."")
+        wait(0.4)
+        Toggle = false 
+    end 
+end
+end
+end
+end
